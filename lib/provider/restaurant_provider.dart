@@ -53,6 +53,7 @@ class RestaurantProvider extends ChangeNotifier {
         return _restaurantResult = restaurantSearch;
       } else {
         _state = ResultState.error;
+        notifyListeners();
       }
     } catch (e) {
       _state = ResultState.error;
