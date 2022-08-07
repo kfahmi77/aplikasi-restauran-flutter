@@ -26,8 +26,7 @@ class CardListRestaurant extends StatelessWidget {
                         ),
                         fit: BoxFit.cover)),
               ),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
+              Expanded(
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -37,8 +36,7 @@ class CardListRestaurant extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
+              Expanded(
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -56,8 +54,7 @@ class CardListRestaurant extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(4.0),
+              Expanded(
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
