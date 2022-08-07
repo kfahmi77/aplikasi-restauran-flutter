@@ -66,6 +66,9 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
                         if (query != '')
                           {
                             provider.getRestaurantSearch(query),
+                          }else{
+                            provider.getAllRestaurants(),
+                            _filter.clear()
                           }
                       },
                     ),
