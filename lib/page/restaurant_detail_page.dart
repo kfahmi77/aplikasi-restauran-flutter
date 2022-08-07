@@ -29,7 +29,7 @@ class RestaurantDetailPage extends StatelessWidget {
               provider = state;
               if (state.state == ResultState.loading) {
                 return const Center(
-                  child: SpinKitHourGlass(
+                  child: SpinKitDancingSquare(
                     color: Colors.green,
                     duration: Duration(microseconds: 1200),
                     size: 50,

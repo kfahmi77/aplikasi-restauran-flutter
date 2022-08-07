@@ -95,7 +95,7 @@ class _RestaurantHomePageState extends State<RestaurantHomePage> {
           provider = state;
           if (state.state == ResultState.loading) {
             return const Center(
-              child: SpinKitHourGlass(
+              child: SpinKitCircle(
                 color: Colors.green,
                 duration: Duration(microseconds: 1200),
                 size: 50,
