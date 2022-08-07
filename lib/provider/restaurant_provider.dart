@@ -46,18 +46,15 @@ class RestaurantProvider extends ChangeNotifier {
       if (restaurantSearch.restaurants.isEmpty) {
         _state = ResultState.noData;
         notifyListeners();
-        return _message = 'Data tidak ada';
-      } else if (restaurantSearch.restaurants.isNotEmpty) {
+        return _message = 'Error 404';
+      } else {
         _state = ResultState.hasData;
         notifyListeners();
         return _restaurantResult = restaurantSearch;
-      } else {
-        _state = ResultState.error;
-        notifyListeners();
       }
     } catch (e) {
       _state = ResultState.error;
-
+      notifyListeners();
       return _message = 'Error: $e';
     }
   }
